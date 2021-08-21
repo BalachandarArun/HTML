@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Elite learning System</h1>
+    </div>
+    <br><br><br>
+    <nav>
+        <table align="center">
+            <tr>
+                <td class="home"><a href="index.html" > Home </a></td>
+                <td class="log"><a href="login.html" style="color: red;font-weight: bold;"> Login </a></td>
+                <td class="reg"><a href="register.html"> Register </a></td>
+                <td class="about"><a href="aboutus.html"> About us </a></td>
+                <td style="padding-right: 100px;" class="contact"><a href="contact.html"> Contact us </a></td>
+            </tr>
+        </table>
+        <br><br><br>
+        <h2 style="text-align: center;"> Login </h2>
+        
+        <h3 style="text-align: center;" onclick='test()'>Students login</h3>
+        
+        <h3 style="text-align: center;" onclick='test2()'>Staff login</h3>
+        <h3 style="text-align: center;" onclick='test3()'>Admin login</h3>
+        <center><p id="display"></p></center>
+        
+</body>
+</html>
+
+<script>
+    function test() 
+    {
+        let u_name = prompt("Enter your user name");
+        if (u_name == "Balachandar")
+        {
+            let pass = prompt("Enter your password")
+            if(pass == "bala123")
+            {
+                alert("login successfully");
+                document.getElementById("display").outerHTML = "<a href='student.html'>Login successfully</a>"
+            }
+            else
+            {
+                alert("Enter password correctly");
+                test()
+            }
+        }
+        else
+        {
+            alert("Enter user name correctly!...")
+            test()
+        }    
+    }
+    function test2() 
+    {
+        let u_name = prompt("Enter Staff id");
+        if (u_name == "777")
+        {
+            let pass = prompt("Enter your password")
+            if(pass == "balacs")
+            {
+                alert("login successfully");
+                document.getElementById("display").outerHTML = "<a href='teacher.html'>Login successfully</a>"
+            }
+            else
+            {
+                alert("Enter password correctly");
+                test()
+            }
+        }
+        else
+        {
+            alert("Enter user name correctly!...")
+            test()
+        }    
+    }
+    function test3() 
+    {
+        let u_name = prompt("Enter your user name");
+        if (u_name == "admin")
+        {
+            let pass = prompt("Enter your password")
+            if(pass == "admin123")
+            {
+                alert("login successfully");
+                document.getElementById("display").outerHTML = "<a href='admin.html'>Login successfully</a>"
+            }
+            else
+            {
+                alert("Enter password correctly");
+                test()
+            }
+        }
+        else
+        {
+            alert("Enter user name correctly!...")
+            test()
+        }    
+    }
+</script>
+
+<style>
+    h3:hover
+    {
+        color: red;
+        transition: 2s;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+     a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    body
+    {
+        /* background-color: ghostwhite; */
+        background-color: #fef2d9;
+    }
+    .header
+    {
+        text-align: center;
+        background-color:  #ddb96b;
+        /* #9aceeb 
+        rgb(78, 184, 170)*/
+        padding: 50px;
+        /* border-bottom-left-radius: 50px; */
+        /* border-radius: 50px; */
+        border-radius: 10px;
+    }
+    .header:hover
+    {
+        transition: 3s;
+        color: white;
+    }
+    td
+    {
+        padding-left: 50px;
+    }
+    /* .home:hover, .log:hover, .reg:hover, .about:hover, .contact:hover */
+    a:hover
+    {
+        /* color: blueviolet; */
+        color: blue;
+        font-weight: bolder;
+        text-decoration: underline;
+        transition: 1.6s;
+    }
+    h2:hover
+    {
+        color: blue;
+        text-decoration: underline;
+        transition: 2.5s;
+    }
+</style>

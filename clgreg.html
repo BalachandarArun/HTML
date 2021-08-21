@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Elite learning System</h1>
+    </div>
+    <br><br><br>
+    <nav>
+        <table align="center">
+            <tr>
+                <td class="home"><a href="index.html"> Home </a></td>
+                <td class="log"><a href="index.html"> Login </a></td>
+                <td class="reg"><a href="register.html" style="color: red;font-weight: bold;"> Register </a></td>
+                <td class="about"><a href="index.html"> About us </a></td>
+                <td style="padding-right: 100px;" class="contact"><a href="contact.html"> Contact us </a></td>
+            </tr>
+        </table>
+        <br><br><br>
+        <h2 style="text-align: center;">College Registration</h2>
+        <br>
+        <form method="GET">
+            <label for="Name of the institution"> Name of the institution : </label>
+            <input type="text" name="u_name">
+            <br><br>
+            <label for="Origin"> Orgin of year : </label>
+            <input type="month" name="Orgin">
+            <br><br>
+            <label for="Strength of Students"> Strength of Students </label>
+            <input type="text" name="Strength" maxlength="4">
+            <br><br>
+            <!-- <label for="Communication address"> Communication Address </label>
+            <br>
+            <input type="text" name="Address" style="width: 250px;height: 250px;"> -->
+            <table align="center">
+                <tr>
+                    <td style="padding: 0px;vertical-align: text-top;"><label for="College address"> Communication Address : </label></td>
+                    <td style="padding: 0px;"><input type="text" name="Address" style="width: 250px;height: 100px;"></td>
+                </tr>
+            </table>
+            <br><br>
+            <label for="email"> Email </label>
+            <input type="email" name="email">
+            <br><br>
+            <label for="Password"> Create new password </label>
+            <input type="password" name="password">
+            <br><br>
+           <a href="login.html"> <input type="button" value="submit query" onclick="alert('Form submitted successfully')"> </a> 
+            <input type="reset">
+        </form>
+</body>
+</html>
+
+<style>
+     a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    body
+    {
+        /* background-color: ghostwhite; */
+        background-color: #fef2d9;
+    }
+    .header
+    {
+        text-align: center;
+        background-color:  #ddb96b;
+        /* #9aceeb 
+        rgb(78, 184, 170)*/
+        padding: 50px;
+        /* border-bottom-left-radius: 50px; */
+        /* border-radius: 50px; */
+        border-radius: 10px;
+    }
+    .header:hover
+    {
+        transition: 3s;
+        color: white;
+    }
+    td
+    {
+        padding-left: 50px;
+    }
+    /* .home:hover, .log:hover, .reg:hover, .about:hover, .contact:hover */
+    a:hover
+    {
+        /* color: blueviolet; */
+        color: blue;
+        font-weight: bolder;
+        text-decoration: underline;
+        transition: 1.6s;
+    }
+    h2:hover
+    {
+        color: blue;
+        text-decoration: underline;
+        transition: 2.5s;
+    }
+    form
+    {
+        text-align: center;
+    }
+</style>
